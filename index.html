@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Brainrot</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: #0d0d0d;
+      color: #e5e5e5;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1, h2, h3 { color: #ffffff; }
+    h1 { border-bottom: 2px solid #262626; padding-bottom: 15px; }
+    .badge {
+      display: inline-block;
+      background: #10b981;
+      color: #000;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .box {
+      background: #171717;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    a { color: #38bdf8; }
+  </style>
+</head>
+<body>
+  <h1>Brainrot - Privacy Policy</h1>
+  <div class="badge">100% OFFLINE & PRIVACY-FIRST</div>
+  <p><strong>Effective Date:</strong> October 17, 2026</p>
+
+  <p><strong>Brainrot</strong> ("we", "our", or "us") provides a personal digital wellbeing and reel counter application designed to help users combat doomscrolling. Your privacy is paramount: <strong>Brainrot operates 100% locally on your device with no external cloud servers and no data tracking.</strong></p>
+
+  <div class="box">
+    <h2>1. On-Device Storage Only</h2>
+    <p>All app statistics (reels tracked, time wasted counters, dopamine velocity metrics, and user preferences) are stored strictly inside your phone's private local SQLite database (<code>brainrot.db</code>). None of this data is ever transmitted, backed up to external servers, or shared with third parties.</p>
+  </div>
+
+  <div class="box">
+    <h2>2. Android Accessibility Service API Prominent Disclosure</h2>
+    <p>Brainrot requires the Android <strong>AccessibilityService API</strong> solely to deliver its core functionality:</p>
+    <ul>
+      <li><strong>Targeted Application Detection:</strong> The service evaluates on-screen UI components in Instagram and YouTube to identify when a Reel or Short is in view.</li>
+      <li><strong>Usage & Limit Enforcement:</strong> The service logs the view count locally to help you abide by your self-imposed scroll limits and returns you to your home screen when your limit is reached.</li>
+    </ul>
+    <p><strong>Strict Privacy Guarantee:</strong> The Accessibility Service does <em>NOT</em> monitor personal messages, passwords, keystrokes, personal accounts, audio, or financial transactions. No accessibility data is ever stored permanently or transmitted off your device.</p>
+  </div>
+
+  <div class="box">
+    <h2>3. Overlay Permission</h2>
+    <p>Brainrot uses the <code>SYSTEM_ALERT_WINDOW</code> permission to display an optional floating pill counter over video apps so you remain conscious of your screen time while browsing.</p>
+  </div>
+
+  <div class="box">
+    <h2>4. Contact & Support</h2>
+    <p>For questions or verification, please contact us through our official repository:</p>
+    <p><a href="https://github.com/shivam108ku/Your-counts" target="_blank">Brainrot GitHub Repository</a></p>
+  </div>
+</body>
+</html>
